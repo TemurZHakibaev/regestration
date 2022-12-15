@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <form id="form">
+            <label>
+              <span class="span1">Your name must be more than 4</span>
+                <input type="text" name="userName" id="user_name" placeholder="Enter your name..." maxlength="12" minlength="4" required/>
+            </label>
+            <label>
+                <span class="span2">Your surname must be more than 4</span>
+                <input type="text" name="user_surname" id="user_surname" placeholder="Enter your surname..." maxlength="16" minlength="4" required/>
+              </label>
+            <label>
+                <span class="span3">Your number must be more than 7</span>
+                <input type="tel" name="user_phone" id="user_phone" placeholder="Enter your phone number..." required/>
+            </label>
+            <label>
+                <input type="text" name="user_address" id="user_address" placeholder="Enter your address..." required/>
+            </label>
+            <label>
+                <input type="email" name="user_email" id="user_email" placeholder="Enter your E-mail address..." required/>
+            </label>
+            <label>
+              <span class="span4">Password must be more than 8</span>
+                <input type="password" name="user_password" id="user_password" placeholder="Enter your password..." maxlength="16" minlength="8" required/>
+            </label>
+            <button type="submit" class="btn">Save</button>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+              <div id="list" class="wrapper"></div>
+        </div>
+      </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
